@@ -1,9 +1,9 @@
-import React from 'react';
+import LandingPage from './pages/Landing';
 
 
 const App = () => {
   return (
-    <h1>Hello World</h1>
+    <LandingPage />
   );
 
 }
