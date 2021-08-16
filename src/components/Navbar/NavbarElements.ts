@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
+import { DARK_RED, RED, WHITE } from "../../utils/colors";
 
 
 export const Nav = styled.nav`
@@ -7,16 +8,18 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;    
     z-index: 12;
+    padding: 0 calc((100vw - 1100px) / 2);
 `
 
 export const AppLogo = styled.img`
   width: 150px;
   height: 100%;
   object-fit: contain;
+  margin-left: 24px;
 `
 
 export const NavLink = styled(Link)`
-  color: #FFF;
+  color: ${WHITE};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -28,19 +31,19 @@ export const NavLink = styled(Link)`
   transition: color 0.2s ease-in-out;
 
   &.active {
-    color: #EB001E;
+    color: ${RED};
   }
 
   &:hover {
     transition: color 0.2s ease-in-out;
-    color: #EB001E;
+    color: ${RED};
   }
 `
 
 export const MobileIcon = styled.div`
   display: none;
-  color: white;
-  @media screen and (max-width: 768px) {
+  color: ${WHITE};
+  @media screen and (max-width: 920px) {
     display: block;
     position: absolute;
     top: 0;
@@ -56,7 +59,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 920px) {
     display: none;
   }
 `;
@@ -67,9 +70,9 @@ export const NavLinkContainer = styled.li`
 
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #EB001E;
+  background: ${RED};
   padding: 10px 40px;
-  color: white;
+  color: ${WHITE};
   outline: none;
   border: none;
   cursor: pointer;
@@ -80,14 +83,15 @@ export const NavBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.3s ease-in-out;
-    background: #B90019;    
+    background: ${DARK_RED};    
   }
 `;
 
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  margin-right: 24px;
+  @media screen and (max-width: 920px) {
     display: none;
   }
 `;

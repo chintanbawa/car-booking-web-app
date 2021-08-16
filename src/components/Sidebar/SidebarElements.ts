@@ -8,7 +8,7 @@ interface AsideProps {
 export const Aside = styled.aside<AsideProps>`
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: #0d0d0d;
