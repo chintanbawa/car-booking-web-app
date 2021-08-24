@@ -10,7 +10,7 @@ export const Container = styled.div`
     padding-right: calc((100vw - 1500px) / 2);
     margin: 0px 24px;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1024px){
         flex-direction: column;
     }
 `
@@ -22,7 +22,7 @@ export const FirstContainer = styled.div`
     justify-content: center; 
     padding-right: 1.2rem;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1024px){
         padding-right: 0px;
     }
 `
@@ -50,6 +50,7 @@ export const SubHeadingText = styled.p`
 export const InfoText = styled.p`
     font-size: 1.3rem;
     margin: 0.5rem 0px;
+    text-align: justify;
 
     @media screen and (max-width: 768px){
         font-size: 1.1rem;
@@ -88,7 +89,7 @@ export const SecondContainer = styled.div`
     justify-content: center;
     padding: 0px;
     
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1024px){
         padding: 3rem 0px;
     }
 `
